@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 977795645
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 100
   m_Sprite: {fileID: 1681589670, guid: 9e08b50203b281544916b8afb769d628, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
-  jumpPower: 17
+  jumpPower: 20
   climbSpeed: 5
   deathKick: {x: 20, y: 20}
   bulletPre: {fileID: 5943390573954176756, guid: fe36aecb4348e174b96bc8534c05a55c, type: 3}
