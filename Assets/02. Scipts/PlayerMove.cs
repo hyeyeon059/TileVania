@@ -105,12 +105,14 @@ public class PlayerMove : MonoBehaviour
             isAlive = false;
             animator.SetTrigger("Dying");
             rb.velocity = deathKick;
+            FindObjectOfType<GameSession>().PrecessPlayerDeath();
         }
 
         if (capsuleCollider.IsTouchingLayers(LayerMask.GetMask("Hazard")))
         {
             isAlive = false;
             animator.SetTrigger("Dying");
+            FindObjectOfType<GameSession>().PrecessPlayerDeath();
         }
     }
 
