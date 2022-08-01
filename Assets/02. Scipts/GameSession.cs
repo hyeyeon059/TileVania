@@ -27,8 +27,8 @@ public class GameSession : MonoBehaviour
 
     private void Start()
     {
-        lifeText.text = playerLifes.ToString();
-        scoreText.text = score.ToString();
+        lifeText.text = "Life : " + playerLifes.ToString();
+        scoreText.text = "Score : " + score.ToString();
     }
 
     public void PrecessPlayerDeath()
@@ -48,13 +48,13 @@ public class GameSession : MonoBehaviour
         playerLifes--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-        lifeText.text = playerLifes.ToString();
+        lifeText.text = "Life : " + playerLifes.ToString();
     }
 
     public void AddInScore(int pointToAdd)
     {
         score += pointToAdd;
-        scoreText.text = score.ToString();
+        scoreText.text = "Score :" + score.ToString();
     }
 
     void ResetGameSession()
