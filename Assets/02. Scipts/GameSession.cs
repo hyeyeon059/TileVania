@@ -40,6 +40,7 @@ public class GameSession : MonoBehaviour
         else
         {
             ResetGameSession();
+            FindObjectOfType<ScenePersist>().ResetScene();
         }
     }
 
@@ -54,7 +55,7 @@ public class GameSession : MonoBehaviour
     public void AddInScore(int pointToAdd)
     {
         score += pointToAdd;
-        scoreText.text = "Score :" + score.ToString();
+        scoreText.text = "Score : " + score.ToString();
     }
 
     void ResetGameSession()
