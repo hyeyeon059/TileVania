@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2((float)speed, 0);
+        rb.velocity = new Vector2(xSpeed, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
